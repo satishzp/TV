@@ -1,0 +1,129 @@
+/* Start glopal */
+*{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.container{position:relative;width:1170px;margin:0 auto;overflow:hidden;}
+ul{list-style:none;}
+a{text-decoration:none;color:#aaa;}
+h1,h2{color:#000;font-weight:bold;margin:0;}
+h3{color:#f00;}
+.spaciale_ruler{position:relative;}
+.spaciale_ruler:after{content:"";position:absolute;top:35px;left:0;width:100%;border-bottom:5px solid #f00;}
+/* End glopal */
+/** Start Header **/
+header{background-color:#555;}
+/* Start first part header */
+.bgblack{background-color:#333;}
+.bgblack li{float:left;font-size:12px;padding:18px;border-left:1.6px dotted #aaa;cursor:pointer;}
+.bgblack li:last-child{border-right:1.6px dotted #aaa;}
+.bgblack .active a{color:#f00;}
+.bgblack li:hover a{color:#f00;transition:all .5s ease-in-out;}
+.bgblack form{float:right;width:30%;display:flex;justify-content:flex-end;margin:8px;}
+.bgblack input{width:20%;padding:8px;margin-right:5px;background-color:transparent;border:none;color:#fff;}
+.bgblack input:focus{outline:.5px solid #f00;width:75%;transition:width .5s ease-in-out;}
+::-webkit-input-placeholder{color: #f00;}
+.bgblack button{color:#fff;border:none;text-align:center;background-color:transparent;}
+.bgblack button a{text-decoration:none;color:#fff;}
+/* End first part header */
+/* Start second part header */
+.Logodiv{width:50%;float:left;position:relative;}
+.Logodiv .circle{width:150px;height:150px;float:left;margin:20px;background-color:#f00;border-radius:50%;border:none;}
+.logodiv span{font-size:130px;font-style:italic;font-weight:bold;color:#fff;text-transform:uppercase;position:absolute;top:25px;left:0px;}
+.logodiv h1{color:#fff;font-size:75px;text-transform:capitalize;position:absolute;top:60px;left:180px;}
+.Logodiv:last-child{display:flex;justify-content:flex-end;margin-top:70px;}
+.logodiv li{float:left;font-size:25px;padding:10px;margin:5px}
+.logodiv li a:hover{color:#fff;transition:all .3s ease-in-out;}
+.logodiv .active a{color:#fff;}
+.logodiv p{width:80;background-color:#f00;color:#fff;text-align:center;text-transform:capitalize;padding:18px;}
+.logodiv button{width:60;background-color:#f00;color:#fff;border:none;text-align:center;border-left:1.6px dotted #fff;}
+/* End second part header */
+/* Start third part header */
+.bgred{background-color:#f00;}
+.bgred li{float:left;font-size:20px;padding:15px 20px;border-left:1.6px dotted #aaa;}
+.bgred li:last-child{border-right:1.6px dotted #aaa;}
+.bgred .active{background-color:#000;}
+.bgred li:hover{background-color:#000;transition:all .5s ease-in-out;cursor:pointer;}
+/* End third part header */
+/** End Header **/
+/*** Start Main ***/
+/** Start Maincontant **/
+.maincontant{float:left;overflow:hidden;width:64%;height:500px;position:relative;margin-top:30px}
+.news{float:left;width:33%;height:33%;position:relative;cursor:pointer}
+.news:first-child{width:66%;height:66%;}
+.news:first-child p{font-size:30px;word-wrap:wrap;}
+.news span{position:absolute;top:1px;left:1px;display:inline-block;width:35%;color:#fff;text-align:center;padding:10px 0;background-color:#f00;}
+.news:first-child span{position:absolute;top:1px;left:1px;display:inline-block;width:17%;color:#fff;text-align:center;padding:10px 0;background-color:#f00;}
+.news .image>img{width:100%;height:100%;padding:1px;}
+.news .overlay{position:absolute;bottom:0;left:0;width:100%;height:100%;padding:1px;color:#fff;opacity:.8;background-image:linear-gradient(transparent 40%,#000);}
+.news:hover span{background-color:#555;}
+.news p{position:absolute;left:0;bottom:30px;padding-left:10px;}
+.news ul{position:absolute;left:0;bottom:0;padding:10px 0 5px 10px;list-style:none;}
+.news li{float:left;padding-right:20px;}
+/** End Maincontant **/
+/** Start aside **/
+aside{float:right;width:34%;margin:30px 0 0 10px}
+aside .featured{overflow:hidden;padding:10px 0;border-bottom:1px solid #aaa;}
+aside .featured:last-child{border:none;}
+aside .featured:hover{background-image:linear-gradient(to top right,transparent 40%,#888);cursor:pointer;}
+aside .imageside{position:relative;float:left;width:35%;}
+aside img{float:left;width:100%;}
+aside button{float:left;width:25%;height:30%;font-size:18px;position:absolute;bottom:0;right:0;color:#fff;background-color:#f00;border:none;}
+aside button:hover{background-color:#555;}
+aside .textside,aside .textsideonly{float:left;width:65%;padding:0 8px;font-size:14px;font-weight:bold;line-height:150%}
+aside li{float:left;color:#888;padding-right:20px;}
+aside .textsideonly{width:100%;padding:0 8px;font-size:14px;}
+/** End aside **/
+/** Start Sections **/
+/* Start Latest list */
+section{overflow:hidden;width:64%;margin-top:30px}
+.latestlist{float:left;width:55%}
+.latestlist .Latest{overflow:hidden;padding:10px 0;border-bottom:1px solid #aaa;}
+.latestlist .Latest:last-child{border:none;}
+.latestlist .Latest:not(:last-child):hover{background-image:linear-gradient(to top right,transparent 40%,#888);cursor:pointer;}
+.latestlist .imageside{position:relative;float:left;width:35%;}
+.latestlist img{float:left;width:100%;}
+.latestlist .imageside button{float:left;width:25%;height:30%;font-size:18px;position:absolute;bottom:0;right:0;color:#fff;background-color:#f00;border:none;}
+.latestlist .imageside button:hover{background-color:#555;}
+.latestlist .textside{float:left;width:65%;padding:0 8px;font-size:14px;font-weight:bold;line-height:150%}
+.latestlist p{color:#888;font-size:14px;font-weight:bold;line-height:150%}
+.latestlist li{float:left;color:#888;padding-right:20px;}
+.latestlist .textsideonly{width:100%;height:1.9%;padding:0 8px;font-size:14px;line-height:140%}
+.latestlist .Latest:last-child button{padding:15px 20px;margin:10px 0;color:#fff;background-color:#f00;border:none;text-transform:capitalize;font-size:14px}
+.latestlist .Latest:last-child button:hover{background-color:#555;}
+/* End Latest list */
+/* Start Populer list */
+.popularlist{float:left;width:40%;margin:0 15px}
+.popularlist .popular{overflow:hidden;padding:10px 0;border-bottom:1px solid #aaa;}
+.popularlist .popular:last-child{border:none;padding:0}
+.popularlist .popular:hover{background-image:linear-gradient(to top right,transparent 40%,#888);cursor:pointer;}
+.popularlist li{float:left;color:#888;padding-right:20px;}
+.popularlist li:first-of-type{color:#f00;font-size:130%}
+.popularlist .textsideonly{width:100%;height:1.9%;padding:0 8px;font-size:14px;line-height:140%}
+.popularlist .newssection{position:relative;margin:10px 0;}
+.popularlist span{position:absolute;top:0;left:0;display:block;width:25%;color:#fff;text-align:center;padding:10px 0;background-color:#f00;}
+.popularlist img{width:100%;}
+.popularlist .newssection p{padding:15px;background-color:#f00;color:#fff;font-weight:bold;line-height:22px;}
+.popularlist span{background:#555;}
+.popularlist .newssection:hover p{background-color:#555;cursor:pointer;}
+/* End Populer list */
+/** End Sections **/
+/*** End Main ***/
+/* Start Footer */
+footer{background-color:#555;}
+footer section{width:100%;border:none;margin:35px 0;}
+.footerlogo{width:35%;float:left;overflow:hidden;}
+.minLogodiv{float:left;position:relative;margin-bottom:35px;}
+footer .circle{width:80px;height:80px;float:left;background-color:#f00;border-radius:50%;border:none;}
+.minLogodiv span{font-size:65px;font-style:italic;font-weight:bold;color:#fff;text-transform:uppercase;position:absolute;top:5px;left:-10px;}
+footer h1{color:#fff;font-size:40px;text-transform:capitalize;position:absolute;top:20px;left:85px;}
+footer p{float:left;color:#aaa;font-size:15px;margin-right:35px;}
+footer li{margin:10px 0;}
+footer h4{color:#fff;letter-spacing:1px;}
+.nav{float:left;width:20%;}
+.meta{float:left;width:15%;}
+.contact{float:left;width:30%;}
+.contact i{color:#f00;font-size:30px}
+.contact span{color:#fff;}
+.contact li:last-child a{color:#f00;text-decoration:underline;}
+footer section:last-child{width:93%;border-top:1px solid #aaa;padding-top:10px;}
+footer button{position:absolute;right:15;bottom:40px;background:#f00;border:none;border-radius:50%;width:50px;height:50px;color:#fff;font-size:17px;}
+footer button:hover i{color:#fff;}
+/* End Footer */
